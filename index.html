@@ -4,144 +4,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luminous Face Yoga | Reveal Your Radiance Naturally</title>
-    <!-- Google Fonts -->
+    <title>Luminous Face Yoga | Lift, Firm, Glow</title>
+    <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
         rel="stylesheet">
+    <!-- Tailwind-like Utilities & Custom System -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header class="glass"
-        style="position: fixed; top: 20px; left: 20px; right: 20px; z-index: 1000; padding: 10px 40px; display: flex; justify-content: space-between; align-items: center;">
-        <div class="logo" style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--primary);">Luminous
+    <!-- 1. Header -->
+    <header class="header-glass">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; height: 80px;">
+            <div class="font-heading" style="font-size: 1.75rem; font-weight: 700;">
+                LUMINOUS <span style="font-weight: 400; font-size: 1rem; letter-spacing: 2px;">FACE YOGA</span>
+            </div>
+            <nav style="display: flex; gap: 40px; align-items: center;" class="desktop-nav">
+                <a href="#how-it-works" style="text-decoration: none; color: var(--text-slate); font-weight: 500;">How
+                    it Works</a>
+                <a href="#programs"
+                    style="text-decoration: none; color: var(--text-slate); font-weight: 500;">Programs</a>
+                <a href="#results" style="text-decoration: none; color: var(--text-slate); font-weight: 500;">Real
+                    Results</a>
+                <a href="#" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.95rem;">Start 7-Day Free
+                    Trial</a>
+            </nav>
         </div>
-        <nav style="display: flex; gap: 30px;">
-            <a href="#" style="text-decoration: none; color: var(--text-slate); font-weight: 500;">Courses</a>
-            <a href="#" style="text-decoration: none; color: var(--text-slate); font-weight: 500;">About</a>
-            <a href="#" style="text-decoration: none; color: var(--text-slate); font-weight: 500;">Community</a>
-        </nav>
-        <a href="#" class="btn-primary" style="padding: 10px 25px;">Start Your Journey</a>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero"
-        style="min-height: 100vh; display: flex; align-items: center; background: radial-gradient(circle at top right, #FFF5F7, #FFFFFF); overflow: hidden;">
-        <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
-            <div class="hero-content animate-fade-in">
-                <h1 style="font-size: 4rem; margin-bottom: 20px; line-height: 1.1;">Reveal Your <br><span
-                        style="color: var(--primary);">Radiance</span> Naturally</h1>
-                <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 40px; max-width: 500px;">
-                    Transform your skin from within with rituals designed to lift, sculpt, and luminous. Join the
-                    world's most comprehensive face yoga platform.</p>
-                <div class="hero-ctas">
-                    <button class="btn-primary">Start Your Glow Journey</button>
-                    <button
-                        style="background: transparent; border: 1px solid var(--primary); color: var(--primary); padding: 12px 32px; border-radius: 50px; margin-left: 20px; font-weight: 600; cursor: pointer;">View
-                        Programs</button>
-                </div>
-            </div>
-            <div class="hero-image animate-fade-in" style="animation-delay: 0.2s;">
-                <img src="hero-glow.png" alt="Luminous Face Yoga"
-                    style="width: 100%; border-radius: 30px; box-shadow: 0 30px 60px rgba(0,0,0,0.1);">
-            </div>
+    <!-- 2. The "Ultimate Glow" Hero Section -->
+    <section style="padding: 160px 0 100px 0; background-color: var(--bg-pearl); overflow: hidden; position: relative;">
+        <!-- Background soft glow -->
+        <div
+            style="position: absolute; top: 0; right: 0; width: 600px; height: 600px; background: radial-gradient(circle, var(--primary-light) 0%, rgba(255,255,255,0) 70%); border-radius: 50%; opacity: 0.6; z-index: 0;">
         </div>
-    </section>
 
-    <!-- Social Proof -->
-    <section style="padding: 60px 0; background: #fff;">
-        <div class="container" style="text-align: center;">
-            <p
-                style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; color: var(--text-muted); margin-bottom: 30px;">
-                As Featured In</p>
-            <div style="display: flex; justify-content: center; gap: 60px; opacity: 0.4; filter: grayscale(1);">
-                <span style="font-size: 1.5rem; font-weight: 700;">VOGUE</span>
-                <span style="font-size: 1.5rem; font-weight: 700;">ELLE</span>
-                <span style="font-size: 1.5rem; font-weight: 700;">GLAMOUR</span>
-                <span style="font-size: 1.5rem; font-weight: 700;">BAZAAR</span>
-            </div>
-        </div>
-    </section>
+        <div class="container hero-grid"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 1;">
+            <div class="hero-content animate-on-scroll">
+                <span
+                    style="color: var(--primary); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem; padding-bottom: 20px; display: block;">Natural
+                    Face Fitness</span>
+                <h1 style="font-size: 4.5rem; line-height: 1.05; margin-bottom: 24px; color: var(--text-slate);">
+                    Lift, Firm, <br><i style="color: var(--primary);">Glow.</i> Naturally.
+                </h1>
+                <p style="font-size: 1.25rem; margin-bottom: 40px; max-width: 480px;">
+                    Join over 100,000 women turning back the clock with just 5 minutes of targeted face yoga a day.
+                </p>
+                <div class="btn-group" style="display: flex; align-items: center; margin-bottom: 40px;">
+                    <a href="#" class="btn btn-primary">Start Your 7-Day Free Trial</a>
+                    <a href="#how-it-works" class="btn btn-outline" style="margin-left: 16px;">See How It Works</a>
+                </div>
 
-    <!-- Before & After Results -->
-    <section style="padding: 100px 0; background: var(--bg-pearl);">
-        <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
-            <div class="result-images" style="position: relative;">
-                <div class="glass" style="padding: 10px; overflow: hidden;">
-                    <img src="results-placeholder.png" alt="Results" style="width: 100%; border-radius: 15px;">
-                </div>
-                <div
-                    style="position: absolute; bottom: -20px; right: -20px; background: white; padding: 15px 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                    <p style="font-weight: 700; color: var(--primary);">"Visible results in 21 days"</p>
+                <!-- Instant Authority -->
+                <div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px; font-weight: 500;">
+                        FEATURED IN</p>
+                    <div style="display: flex; gap: 30px; opacity: 0.5; filter: grayscale(1);">
+                        <span class="font-heading" style="font-size: 1.25rem;">VOGUE</span>
+                        <span class="font-heading" style="font-size: 1.25rem;">ELLE</span>
+                        <span class="font-heading" style="font-size: 1.25rem;">BAZAAR</span>
+                    </div>
                 </div>
             </div>
-            <div class="result-content">
-                <h2 style="font-size: 2.5rem; margin-bottom: 25px;">Real Women. <br>Real Transformation.</h2>
-                <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px;">Our methods aren't just
-                    about beauty—they're about health. By lifting and toning your facial muscles, we restore your
-                    natural vitality.</p>
-                <div style="display: flex; flex-direction: column; gap: 15px;">
-                    <div style="display: flex; align-items: center; gap: 15px;">
-                        <span style="color: var(--primary); font-size: 1.2rem;">✓</span>
-                        <span>Lifted Jowls & Defined Jawline</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 15px;">
-                        <span style="color: var(--primary); font-size: 1.2rem;">✓</span>
-                        <span>Reduces Fine Lines & Wrinkles</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 15px;">
-                        <span style="color: var(--primary); font-size: 1.2rem;">✓</span>
-                        <span>Natural Skin Glow & Vitality</span>
+
+            <div class="animate-on-scroll" style="position: relative;">
+                <!-- High-quality placeholder serving as the "Hero Video Proxy" -->
+                <img src="https://images.unsplash.com/photo-1616394584738-bcb3162b9a7c?q=80&w=1200&auto=format&fit=crop"
+                    alt="Radiant Woman"
+                    style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-soft); object-fit: cover; aspect-ratio: 4/5;">
+
+                <!-- Floating Trust Badge -->
+                <div class="glass-card"
+                    style="position: absolute; bottom: 40px; left: -40px; padding: 20px; border-radius: 16px; display: flex; align-items: center; gap: 15px;">
+                    <div
+                        style="width: 50px; height: 50px; background: #FEFCE8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                        ⭐</div>
+                    <div>
+                        <div style="font-weight: 700; color: var(--text-slate);">4.9/5</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">From 2,500+ Reviews</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Program Highlights -->
-    <section style="padding: 100px 0;">
+    <!-- 3. The "Why It Works" Value Proposition -->
+    <section id="how-it-works" style="padding: 120px 0; background-color: var(--bg-white);">
         <div class="container">
-            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 60px;">Guided Rituals for Every Need</h2>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
-                <!-- Card 1 -->
-                <div class="glass" style="padding: 40px; text-align: center;">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto 80px;" class="animate-on-scroll">
+                <h2 style="font-size: 3rem; margin-bottom: 20px;">The Science of Radiance</h2>
+                <p style="font-size: 1.15rem;">By actively engaging the 57 muscles in your face and neck, we restore
+                    vitality from the inside out.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <!-- Prop 1 -->
+                <div class="glass-card animate-on-scroll" style="text-align: center;">
                     <div
-                        style="width: 80px; height: 80px; background: var(--bg-pearl); border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto 20px;">
-                        <span style="font-size: 2rem;">✨</span>
+                        style="width: 64px; height: 64px; background: var(--primary-light); border-radius: 16px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
                     </div>
-                    <h3 style="margin-bottom: 15px;">6-Week Sculpt</h3>
-                    <p style="color: var(--text-muted);">The ultimate foundational program for full face rejuvenation.
+                    <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Natural Facelift</h3>
+                    <p>Lift sagging skin, define your jawline, and reduce jowls by strengthening core facial muscles.
                     </p>
                 </div>
-                <!-- Card 2 -->
-                <div class="glass" style="padding: 40px; text-align: center;">
+
+                <!-- Prop 2 -->
+                <div class="glass-card animate-on-scroll" style="text-align: center;">
                     <div
-                        style="width: 80px; height: 80px; background: var(--bg-pearl); border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto 20px;">
-                        <span style="font-size: 2rem;">👁️</span>
+                        style="width: 64px; height: 64px; background: var(--primary-light); border-radius: 16px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                            </path>
+                        </svg>
                     </div>
-                    <h3 style="margin-bottom: 15px;">Eye & Forehead</h3>
-                    <p style="color: var(--text-muted);">Target fine lines and tension for a brighter, more open look.
-                    </p>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Radiant Complexion</h3>
+                    <p>Boost blood circulation and encourage lymphatic drainage for a healthy, glowing complexion.</p>
                 </div>
-                <!-- Card 3 -->
-                <div class="glass" style="padding: 40px; text-align: center;">
+
+                <!-- Prop 3 -->
+                <div class="glass-card animate-on-scroll" style="text-align: center;">
                     <div
-                        style="width: 80px; height: 80px; background: var(--bg-pearl); border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto 20px;">
-                        <span style="font-size: 2rem;">🦢</span>
+                        style="width: 64px; height: 64px; background: var(--primary-light); border-radius: 16px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
                     </div>
-                    <h3 style="margin-bottom: 15px;">Jaw & Neck</h3>
-                    <p style="color: var(--text-muted);">Define your profile and release jaw tension naturally.</p>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Just 5 Minutes</h3>
+                    <p>A mindful, relaxing ritual that fits effortlessly into your busy daily schedule.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="app.js"></script>
+    <!-- 4. Guided Selection (Solving Overwhelm) -->
+    <section id="programs" style="padding: 120px 0; background-color: var(--bg-pearl);">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto 60px;" class="animate-on-scroll">
+                <h2 style="font-size: 3rem; margin-bottom: 20px;">Find Your Perfect Path</h2>
+                <p style="font-size: 1.15rem;">We've organized our expert guidance into three clear paths to help you
+                    achieve your goals without the guesswork.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Path 1 -->
+                <div class="glass-card animate-on-scroll"
+                    style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&auto=format&fit=crop"
+                        alt="The Foundation" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 40px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span
+                            style="color: var(--primary); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Most
+                            Popular</span>
+                        <h3 style="font-size: 1.75rem; margin-top: 10px; margin-bottom: 15px;">The Foundation</h3>
+                        <p style="margin-bottom: 30px; flex-grow: 1;">Our flagship 6-week program designed for
+                            beginners. A complete overhaul for your face and neck.</p>
+                        <a href="#"
+                            style="color: var(--text-slate); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--primary); padding-bottom: 4px; display: inline-block; width: max-content;">Explore
+                            Program</a>
+                    </div>
+                </div>
+
+                <!-- Path 2 -->
+                <div class="glass-card animate-on-scroll"
+                    style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1544161513-01f11ab195cd?w=600&auto=format&fit=crop"
+                        alt="Targeted Focus" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 40px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span
+                            style="color: var(--primary); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Quick
+                            Fixes</span>
+                        <h3 style="font-size: 1.75rem; margin-top: 10px; margin-bottom: 15px;">Targeted Focus</h3>
+                        <p style="margin-bottom: 30px; flex-grow: 1;">Short, highly specific routines for the eyes,
+                            forehead, jawline, and jowls. Perfect for busy days.</p>
+                        <a href="#"
+                            style="color: var(--text-slate); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--primary); padding-bottom: 4px; display: inline-block; width: max-content;">Explore
+                            Routines</a>
+                    </div>
+                </div>
+
+                <!-- Path 3 -->
+                <div class="glass-card animate-on-scroll"
+                    style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=600&auto=format&fit=crop"
+                        alt="Live Studio" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 40px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <span
+                            style="color: var(--primary); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Community</span>
+                        <h3 style="font-size: 1.75rem; margin-top: 10px; margin-bottom: 15px;">Live Studio</h3>
+                        <p style="margin-bottom: 30px; flex-grow: 1;">Join our trainers every week for live guidance,
+                            Q&A, and community motivation.</p>
+                        <a href="#"
+                            style="color: var(--text-slate); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--primary); padding-bottom: 4px; display: inline-block; width: max-content;">Join
+                            Studio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Meet the Founder -->
+    <section id="founder" style="padding: 120px 0; background-color: var(--bg-white);">
+        <div class="container hero-grid"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+            <div class="animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&auto=format&fit=crop"
+                    alt="Philippa Mitchell" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-soft);">
+            </div>
+            <div class="animate-on-scroll">
+                <h2 style="font-size: 3rem; margin-bottom: 24px;">"Ageing is inevitable. How you age is up to you."</h2>
+                <p style="font-size: 1.15rem; margin-bottom: 20px;">Hi, I'm Philippa Mitchell. I created Luminous Face
+                    Yoga because I was tired of the beauty industry telling us we needed invasive procedures to look our
+                    best.</p>
+                <p style="font-size: 1.15rem; margin-bottom: 40px;">Our method is built on the belief that empowering
+                    women with the tools to naturally lift and tone their own faces is the ultimate form of self-care.
+                </p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Signature_Placeholder.svg" alt="Signature"
+                    style="height: 60px; filter: grayscale(1); opacity: 0.7;">
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. The "No-Risk" Final Push -->
+    <section style="padding: 120px 0; background-color: var(--bg-pearl); text-align: center;">
+        <div class="container animate-on-scroll">
+            <h2 style="font-size: 3.5rem; margin-bottom: 24px;">Ready to Reveal Your Radiance?</h2>
+            <p
+                style="font-size: 1.25rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Start today with absolutely no risk. If you don't feel a difference in 7 days, cancel anytime.
+            </p>
+            <a href="#" class="btn btn-primary" style="font-size: 1.15rem; padding: 18px 48px;">Start Your 7-Day Free
+                Trial</a>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-muted);">£18/month after trial. Cancel
+                anytime with one click.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 60px 0; background-color: var(--text-slate); color: white;">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px;">
+            <div class="font-heading" style="font-size: 1.5rem; font-weight: 700;">
+                LUMINOUS <span style="font-weight: 400; font-size: 0.85rem; letter-spacing: 2px;">FACE YOGA</span>
+            </div>
+            <nav style="display: flex; gap: 30px;">
+                <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Terms</a>
+                <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Privacy</a>
+                <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Contact</a>
+            </nav>
+        </div>
+        <div class="container"
+            style="text-align: center; padding-top: 40px; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
+            &copy; 2026 Luminous Face Yoga. All rights reserved. Let's Glow.
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(element => {
+                observer.observe(element);
+            });
+
+            // Header glass effect on scroll
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header-glass');
+                if (window.scrollY > 50) {
+                    header.style.padding = '5px 0';
+                    header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
+                } else {
+                    header.style.padding = '0';
+                    header.style.boxShadow = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
