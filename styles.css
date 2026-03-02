@@ -398,7 +398,7 @@ a {
 /* Overlapping Video Card */
 .hero-video-card {
     position: relative;
-    margin: -120px auto 32px;
+    margin: -120px auto 0;
     max-width: 1000px;
     width: 90%;
     aspect-ratio: 16/9;
@@ -871,15 +871,13 @@ a {
 }
 
 .pricing-toggle {
-    display: inline-flex;
+    display: flex;
+    width: max-content;
     background: white;
     padding: 6px;
     border-radius: var(--radius-pill);
     box-shadow: var(--shadow-soft);
     margin: 0 auto 60px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .toggle-btn {
