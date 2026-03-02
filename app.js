@@ -18,6 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
         section.classList.add('opacity-0'); // Initial state
         observer.observe(section);
     });
+
+    // Sticky Header Scroll Logic
+    const navWrapper = document.querySelector('.nav-wrapper');
+    if (navWrapper) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 30) {
+                navWrapper.classList.add('scrolled');
+            } else {
+                navWrapper.classList.remove('scrolled');
+            }
+        });
+    }
 });
 
 // Add opacity-0 to CSS via style injection for the observer
