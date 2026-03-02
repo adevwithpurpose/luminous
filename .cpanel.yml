@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - /bin/cp -rf * /home/dronecul/public_html/luminous.outafbox.com/
-    - /bin/cp -rf * /home/dronecul/luminous.outafbox.com/
+    - export DEPLOYPATH=/home/dronecul/luminous.outafbox.com
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -rf * $DEPLOYPATH/
