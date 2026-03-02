@@ -4,307 +4,585 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luminous Face Yoga | Lift, Firm, Glow</title>
-    <!-- Premium Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
-        rel="stylesheet">
-    <!-- Tailwind-like Utilities & Custom System -->
+    <title>Luminous | High-End Face Fitness</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Include GSAP for potential advanced scroll animations later, but using vanilla JS class toggles for now -->
 </head>
 
 <body>
 
-    <!-- 1. Header -->
-    <header class="header-glass">
-        <div class="container"
-            style="display: flex; justify-content: space-between; align-items: center; height: 80px;">
-            <div class="font-heading" style="font-size: 1.75rem; font-weight: 700;">
-                LUMINOUS <span style="font-weight: 400; font-size: 1rem; letter-spacing: 2px;">FACE YOGA</span>
-            </div>
-            <nav style="display: flex; gap: 40px; align-items: center;" class="desktop-nav">
-                <a href="#how-it-works" style="text-decoration: none; color: var(--text-slate); font-weight: 500;">How
-                    it Works</a>
-                <a href="#programs"
-                    style="text-decoration: none; color: var(--text-slate); font-weight: 500;">Programs</a>
-                <a href="#results" style="text-decoration: none; color: var(--text-slate); font-weight: 500;">Real
-                    Results</a>
-                <a href="#" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.95rem;">Start 7-Day Free
-                    Trial</a>
+    <!-- Announcement Bar -->
+    <div class="top-bar">
+        Get 10% off Essential membership with the code LUMINOUS10
+        <a href="#membership" class="btn-top">CLAIM OFFER</a>
+    </div>
+
+    <!-- Floating Glass Header -->
+    <div class="nav-wrapper">
+        <header class="nav-glass">
+            <a href="#">
+                <img src="https://www.luminousfaceyoga.com/logos/logo_alt.png" alt="Luminous" class="nav-logo">
+            </a>
+            <nav class="nav-links">
+                <a href="#method">The Method</a>
+                <a href="#results">Results</a>
+                <a href="#founder">Founder</a>
+                <a href="#community">Community</a>
             </nav>
-        </div>
-    </header>
+            <div class="nav-actions">
+                <a href="#login" style="font-size:0.85rem; font-weight:600; text-transform:uppercase;">Sign In</a>
+                <a href="#membership" class="btn-pill btn-primary" style="padding: 12px 28px;">Start Today</a>
+            </div>
+        </header>
+    </div>
 
-    <!-- 2. The "Ultimate Glow" Hero Section -->
-    <section style="padding: 160px 0 100px 0; background-color: var(--bg-pearl); overflow: hidden; position: relative;">
-        <!-- Background soft glow -->
-        <div
-            style="position: absolute; top: 0; right: 0; width: 600px; height: 600px; background: radial-gradient(circle, var(--primary-light) 0%, rgba(255,255,255,0) 70%); border-radius: 50%; opacity: 0.6; z-index: 0;">
+    <!-- Editorial Split Hero -->
+    <section class="hero-split">
+        <div class="hero-bg-left reveal">
+            <!-- New hero image provided by user -->
+            <img src="Gemini_Generated_Image_ju7jp4ju7jp4ju7j.webp" alt="Philippa Mitchell - Luminous Founder">
         </div>
 
-        <div class="container hero-grid"
-            style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 1;">
-            <div class="hero-content animate-on-scroll">
-                <span
-                    style="color: var(--primary); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem; padding-bottom: 20px; display: block;">Natural
-                    Face Fitness</span>
-                <h1 style="font-size: 4.5rem; line-height: 1.05; margin-bottom: 24px; color: var(--text-slate);">
-                    Lift, Firm, <br><i style="color: var(--primary);">Glow.</i> Naturally.
-                </h1>
-                <p style="font-size: 1.25rem; margin-bottom: 40px; max-width: 480px;">
-                    Join over 100,000 women turning back the clock with just 5 minutes of targeted face yoga a day.
-                </p>
-                <div class="btn-group" style="display: flex; align-items: center; margin-bottom: 40px;">
-                    <a href="#" class="btn btn-primary">Start Your 7-Day Free Trial</a>
-                    <a href="#how-it-works" class="btn btn-outline" style="margin-left: 16px;">See How It Works</a>
+        <div class="hero-content-right reveal">
+            <h1 class="font-heading">WORKOUT FOR<br>YOUR FACE</h1>
+            <p>The only workout program that helps you sculpt and tone your face muscles to bring out your glow
+                naturally.</p>
+
+            <div class="hero-pricing-block">
+                <div class="hero-price">
+                    <span class="hero-price-sub">£150</span>
+                    <span class="hero-price-main">£18<span style="font-size:1rem;">/mo</span></span>
                 </div>
-
-                <!-- Instant Authority -->
                 <div>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px; font-weight: 500;">
-                        FEATURED IN</p>
-                    <div style="display: flex; gap: 30px; opacity: 0.5; filter: grayscale(1);">
-                        <span class="font-heading" style="font-size: 1.25rem;">VOGUE</span>
-                        <span class="font-heading" style="font-size: 1.25rem;">ELLE</span>
-                        <span class="font-heading" style="font-size: 1.25rem;">BAZAAR</span>
+                    <span
+                        style="display:block; font-size:0.8rem; font-weight:600; color:var(--clr-text-body); margin-bottom:4px;">Start
+                        your 7-day free trial</span>
+                    <a href="#membership" class="hero-btn">START JOURNEY</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Overlapping Video Card (Moved here for better control) -->
+    <div class="hero-video-card reveal" style="transition-delay: 0.3s; cursor: pointer;">
+        <iframe src="https://www.youtube.com/embed/a40gEXbkUag" title="Luminous Face Yoga" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:1;">
+        </iframe>
+    </div>
+
+    <!-- As Seen In (Grayscale elegant strip) -->
+    <div class="logos-strip">
+        <div class="container logos-flex">
+            <span class="logo-txt" style="font-family: serif; font-style: italic;">Daily Mail</span>
+            <span class="logo-txt" style="font-weight: 500;">HELLO!</span>
+            <span class="logo-txt" style="letter-spacing: 0.1em; font-family: sans-serif;">MARIE CLAIRE</span>
+            <span class="logo-txt" style="font-family: serif;">The Independent</span>
+            <span class="logo-txt" style="text-transform: uppercase;">Daily Mirror</span>
+        </div>
+    </div>
+
+    <!-- Discovery & Holistic Approach Section -->
+    <div class="steps-bar">
+        <div class="steps-flex">
+            <div class="step-item">STEP ONE: JOIN THE COMMUNITY</div>
+            <div class="step-item">STEP TWO: PRACTICE 10 MIN A DAY</div>
+            <div class="step-item">STEP THREE: RADIATE YOUR GLOW</div>
+        </div>
+    </div>
+
+    <section class="discovery-section">
+        <div class="container">
+            <div class="discovery-header reveal">
+                <h2 class="font-heading">Discover the secret of a natural face lift in under 10 minutes a day</h2>
+                <p>And that's not all. At Luminous, we believe in a holistic and sustainable approach to wellness. Our
+                    methods help you sculpt your face, release deep-seated tension, and naturally lift your
+                    mood—every single day.</p>
+            </div>
+
+            <div class="discovery-grid">
+                <!-- Left Features -->
+                <div class="feature-col left">
+                    <div class="discovery-feature reveal" style="transition-delay: 0.1s;">
+                        <i><svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 22s-4.5-4-4.5-7.5c0-1.5 1-3 2.5-3.5-1.5-1-2-3-1.5-4.5.5-1.5 2-2.5 3.5-2.5s3 1 3.5 2.5c.5 1.5 0 3.5-1.5 4.5 1.5.5 2.5 2 2.5 3.5 0 3.5-4.5 7.5-4.5 7.5z" />
+                            </svg></i>
+                        <span>A holistic approach to a natural face lift</span>
+                    </div>
+                    <div class="discovery-feature reveal" style="transition-delay: 0.2s;">
+                        <i><svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 22s-4.5-4-4.5-7.5c0-1.5 1-3 2.5-3.5-1.5-1-2-3-1.5-4.5.5-1.5 2-2.5 3.5-2.5s3 1 3.5 2.5c.5 1.5 0 3.5-1.5 4.5 1.5.5 2.5 2 2.5 3.5 0 3.5-4.5 7.5-4.5 7.5z" />
+                            </svg></i>
+                        <span>Sculpted & defined features</span>
+                    </div>
+                    <div class="discovery-feature reveal" style="transition-delay: 0.3s;">
+                        <i><svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 22s-4.5-4-4.5-7.5c0-1.5 1-3 2.5-3.5-1.5-1-2-3-1.5-4.5.5-1.5 2-2.5 3.5-2.5s3 1 3.5 2.5c.5 1.5 0 3.5-1.5 4.5 1.5.5 2.5 2 2.5 3.5 0 3.5-4.5 7.5-4.5 7.5z" />
+                            </svg></i>
+                        <span>Improved face symmetry</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="animate-on-scroll" style="position: relative;">
-                <!-- High-quality placeholder serving as the "Hero Video Proxy" -->
-                <img src="https://images.unsplash.com/photo-1616394584738-bcb3162b9a7c?q=80&w=1200&auto=format&fit=crop"
-                    alt="Radiant Woman"
-                    style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-soft); object-fit: cover; aspect-ratio: 4/5;">
+                <!-- Central Image -->
+                <div class="discovery-circle-wrapper reveal">
+                    <img src="luminous_team_circle.png" alt="Luminous Face Yoga Team" class="discovery-circle-image">
+                </div>
 
-                <!-- Floating Trust Badge -->
-                <div class="glass-card"
-                    style="position: absolute; bottom: 40px; left: -40px; padding: 20px; border-radius: 16px; display: flex; align-items: center; gap: 15px;">
-                    <div
-                        style="width: 50px; height: 50px; background: #FEFCE8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
-                        ⭐</div>
-                    <div>
-                        <div style="font-weight: 700; color: var(--text-slate);">4.9/5</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted);">From 2,500+ Reviews</div>
+                <!-- Right Features -->
+                <div class="feature-col right">
+                    <div class="discovery-feature reveal" style="transition-delay: 0.4s;">
+                        <i><svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 22s-4.5-4-4.5-7.5c0-1.5 1-3 2.5-3.5-1.5-1-2-3-1.5-4.5.5-1.5 2-2.5 3.5-2.5s3 1 3.5 2.5c.5 1.5 0 3.5-1.5 4.5 1.5.5 2.5 2 2.5 3.5 0 3.5-4.5 7.5-4.5 7.5z" />
+                            </svg></i>
+                        <span>A confidence boost</span>
+                    </div>
+                    <div class="discovery-feature reveal" style="transition-delay: 0.5s;">
+                        <i><svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 22s-4.5-4-4.5-7.5c0-1.5 1-3 2.5-3.5-1.5-1-2-3-1.5-4.5.5-1.5 2-2.5 3.5-2.5s3 1 3.5 2.5c.5 1.5 0 3.5-1.5 4.5 1.5.5 2.5 2 2.5 3.5 0 3.5-4.5 7.5-4.5 7.5z" />
+                            </svg></i>
+                        <span>A more youthful appearance</span>
+                    </div>
+                    <div class="discovery-feature reveal" style="transition-delay: 0.6s;">
+                        <i><svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 22s-4.5-4-4.5-7.5c0-1.5 1-3 2.5-3.5-1.5-1-2-3-1.5-4.5.5-1.5 2-2.5 3.5-2.5s3 1 3.5 2.5c.5 1.5 0 3.5-1.5 4.5 1.5.5 2.5 2 2.5 3.5 0 3.5-4.5 7.5-4.5 7.5z" />
+                            </svg></i>
+                        <span>Control over your aging process</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. The "Why It Works" Value Proposition -->
-    <section id="how-it-works" style="padding: 120px 0; background-color: var(--bg-white);">
+    <!-- The Method (Asymmetrical Bento Grid) -->
+    <section id="method" class="section-xl" style="background: var(--clr-bg-cream);">
         <div class="container">
-            <div style="text-align: center; max-width: 600px; margin: 0 auto 80px;" class="animate-on-scroll">
-                <h2 style="font-size: 3rem; margin-bottom: 20px;">The Science of Radiance</h2>
-                <p style="font-size: 1.15rem;">By actively engaging the 57 muscles in your face and neck, we restore
-                    vitality from the inside out.</p>
+            <div class="flex-center reveal" style="margin-bottom: 80px; text-align: center; flex-direction: column;">
+                <span
+                    style="font-size: 0.85rem; font-weight: 700; color: var(--clr-accent-darkteal); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;">The
+                    Logic</span>
+                <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); max-width: 800px; margin-bottom: 24px;">Only 10-20% of
+                    skin aging is genetic.</h2>
+                <p style="font-size: 1.25rem; max-width: 600px;">The rest is up to you. Face Yoga is a holistic,
+                    inside-out approach to beauty and well-being.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-                <!-- Prop 1 -->
-                <div class="glass-card animate-on-scroll" style="text-align: center;">
+            <div class="bento-container reveal" style="transition-delay: 0.2s;">
+
+                <!-- Bento 1: Large Feature -->
+                <div class="bento-card bento-wide bento-dark">
                     <div
-                        style="width: 64px; height: 64px; background: var(--primary-light); border-radius: 16px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
-                        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(102, 215, 209, 0.4) 0%, transparent 70%);">
+                    </div>
+                    <div style="position: relative; z-index: 2;">
+                        <h3 class="font-heading" style="font-size: 2.5rem; margin-bottom: 24px; max-width: 400px;">Tone
+                            the 57 muscles in your face & neck.</h3>
+                        <p
+                            style="color: rgba(255,255,255,0.8); font-size: 1.1rem; max-width: 400px; margin-bottom: 40px;">
+                            Just like body fitness, facial targeted exercises lift jowls, reduce double chins, and
+                            soften marionette lines naturally.</p>
+                        <a href="#membership" class="btn-pill btn-teal">Explore Programs</a>
+                    </div>
+                </div>
+
+                <!-- Bento 2: Stat Box -->
+                <div class="bento-card flex-center" style="text-align: center;">
+                    <div
+                        style="font-family: var(--font-heading); font-size: 5rem; color: var(--clr-accent-darkteal); line-height: 1; margin-bottom: 16px;">
+                        10<span style="font-size:1.5rem;">min</span></div>
+                    <h4 style="font-size: 1.25rem; margin-bottom: 8px;">Daily Practice</h4>
+                    <p style="font-size: 0.95rem; color: var(--clr-text-muted);">All it takes to see visible, lasting
+                        results.</p>
+                </div>
+
+                <!-- Bento 3: Circulation -->
+                <div class="bento-card">
+                    <div
+                        style="width: 56px; height: 56px; border-radius: 50%; background: var(--clr-bg-cream); display:flex; align-items:center; justify-content:center; margin-bottom: 24px;">
+                        <svg width="24" height="24" fill="none" stroke="var(--clr-text-navy)" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                            </path>
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Natural Facelift</h3>
-                    <p>Lift sagging skin, define your jawline, and reduce jowls by strengthening core facial muscles.
+                    <h4 style="font-size: 1.5rem; margin-bottom: 16px; font-family: var(--font-heading);">Boost
+                        Circulation</h4>
+                    <p>Techniques increase blood flow, encouraging natural collagen production and lymphatic drainage.
                     </p>
                 </div>
 
-                <!-- Prop 2 -->
-                <div class="glass-card animate-on-scroll" style="text-align: center;">
-                    <div
-                        style="width: 64px; height: 64px; background: var(--primary-light); border-radius: 16px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
-                        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                <!-- Bento 4: Wide Gallery Peek -->
+                <div class="bento-card bento-wide p-0" style="padding: 0;">
+                    <img src="https://www.luminousfaceyoga.com/images/Hero/BeforeAfter%20Gallery/2020/m-before.jpg"
+                        style="width:100%; height:100%; object-fit: cover;" alt="Facial Massage">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Results (Custom Slider) -->
+    <section id="results" class="section-xl">
+        <div class="container">
+            <div class="editorial-grid">
+
+                <div class="reveal">
+                    <span
+                        style="font-size: 0.85rem; font-weight: 700; color: var(--clr-accent-darkteal); text-transform: uppercase;">Clinical
+                        Proof</span>
+                    <h2 style="font-size: 3.5rem; margin: 16px 0 24px;">Visible Results.</h2>
+                    <p style="font-size: 1.25rem; margin-bottom: 40px;">Slide to see the difference 12 weeks of
+                        commitment to the Luminous method can make.</p>
+                    <ul
+                        style="list-style: none; display: flex; flex-direction: column; gap: 16px; margin-bottom: 48px;">
+                        <li style="display:flex; gap:16px; align-items:center;"><svg width="20" height="20" fill="none"
+                                stroke="var(--clr-accent-darkteal)" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Smoothed Frown Lines</li>
+                        <li style="display:flex; gap:16px; align-items:center;"><svg width="20" height="20" fill="none"
+                                stroke="var(--clr-accent-darkteal)" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Lifted Jawline</li>
+                    </ul>
+                    <a href="#membership" class="btn-pill btn-primary">Start Your Journey</a>
+                </div>
+
+                <!-- The Interactive Slider -->
+                <div class="ba-slider reveal" id="ba-slider">
+                    <!-- Base Image (After) -->
+                    <img src="https://www.luminousfaceyoga.com/images/Hero/BeforeAfter%20Gallery/2020/c-after.jpg"
+                        class="ba-img ba-after" alt="After 12 Weeks">
+                    <!-- Overlay Image (Before) -->
+                    <img src="https://www.luminousfaceyoga.com/images/Hero/BeforeAfter%20Gallery/2020/c-before.jpg"
+                        class="ba-img ba-before" id="ba-before-img" alt="Before">
+                    <!-- Handle -->
+                    <div class="ba-handle" id="ba-handle"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Community / Video Reels -->
+    <section id="community" class="section-xl" style="background: var(--clr-bg-cream);">
+        <div class="container reveal">
+            <div
+                style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px; flex-wrap: wrap; gap: 24px;">
+                <div>
+                    <h2 style="font-size: 3.5rem;">The Community</h2>
+                    <p style="font-size: 1.2rem;">Hear directly from women transforming their skin.</p>
+                </div>
+                <!-- Controls for horizontal scroll if implemented, currently just visual -->
+                <div style="display: flex; gap: 16px;">
+                    <div class="flex-center"
+                        style="width:50px; height:50px; border-radius:50%; border:1px solid var(--clr-text-navy); cursor:pointer;">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                             </path>
                         </svg>
                     </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Radiant Complexion</h3>
-                    <p>Boost blood circulation and encourage lymphatic drainage for a healthy, glowing complexion.</p>
-                </div>
-
-                <!-- Prop 3 -->
-                <div class="glass-card animate-on-scroll" style="text-align: center;">
-                    <div
-                        style="width: 64px; height: 64px; background: var(--primary-light); border-radius: 16px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; color: var(--primary);">
-                        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    <div class="flex-center"
+                        style="width:50px; height:50px; border-radius:50%; background:var(--clr-text-navy); color:white; cursor:pointer;">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
                         </svg>
                     </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Just 5 Minutes</h3>
-                    <p>A mindful, relaxing ritual that fits effortlessly into your busy daily schedule.</p>
+                </div>
+            </div>
+
+            <div class="reels-grid">
+                <!-- Reel 1 -->
+                <div class="reel-card"
+                    onclick="document.getElementById('v1').play(); this.querySelector('.reel-overlay').style.display='none';">
+                    <video id="v1"
+                        src="https://www.luminousfaceyoga.com/videos/testimonials/copy_7AF75A5A-681B-4A9E-82CC-0A67FD67DDA5.mp4"
+                        playsinline controlsList="nodownload"
+                        poster="https://www.luminousfaceyoga.com/images/Hero/benefits.jpg"></video>
+                    <div class="reel-overlay">
+                        <div class="play-btn"><svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg></div>
+                        <h4 style="font-size:1.2rem; margin-bottom:4px; font-family:var(--font-heading);">Sarah T.</h4>
+                        <p style="font-size:0.9rem; opacity:0.9;">"Reduced my jowls in 4 weeks."</p>
+                    </div>
+                </div>
+                <!-- Reel 2 -->
+                <div class="reel-card"
+                    onclick="document.getElementById('v2').play(); this.querySelector('.reel-overlay').style.display='none';">
+                    <video id="v2"
+                        src="https://www.luminousfaceyoga.com/videos/testimonials/copy_DFEDF771-D213-4813-91C3-121792CCA296.mp4"
+                        playsinline></video>
+                    <div class="reel-overlay">
+                        <div class="play-btn"><svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg></div>
+                        <h4 style="font-size:1.2rem; margin-bottom:4px; font-family:var(--font-heading);">Emma W.</h4>
+                        <p style="font-size:0.9rem; opacity:0.9;">"My skin feels alive again."</p>
+                    </div>
+                </div>
+                <!-- Reel 3 -->
+                <div class="reel-card"
+                    onclick="document.getElementById('v3').play(); this.querySelector('.reel-overlay').style.display='none';">
+                    <video id="v3"
+                        src="https://www.luminousfaceyoga.com/videos/testimonials/copy_EB314F91-574D-4C90-BA13-51389CC2A568.mp4"
+                        playsinline></video>
+                    <div class="reel-overlay">
+                        <div class="play-btn"><svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg></div>
+                        <h4 style="font-size:1.2rem; margin-bottom:4px; font-family:var(--font-heading);">Chloe M.</h4>
+                        <p style="font-size:0.9rem; opacity:0.9;">"The best 10 minutes of my day."</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. Guided Selection (Solving Overwhelm) -->
-    <section id="programs" style="padding: 120px 0; background-color: var(--bg-pearl);">
+    <!-- Editorial Founder Block -->
+    <section id="founder" class="section-xl">
+        <div class="container editorial-grid">
+            <div class="editorial-img-container reveal">
+                <img src="https://www.luminousfaceyoga.com/images/IMG_6326.jpeg" alt="Philippa Mitchell">
+            </div>
+            <div class="reveal" style="transition-delay: 0.2s; max-width: 500px;">
+                <span
+                    style="font-size: 0.85rem; font-weight: 700; color: var(--clr-accent-darkteal); text-transform: uppercase;">Meet
+                    Philippa</span>
+                <h2 style="font-size: 4rem; line-height: 1; margin: 16px 0 32px;">Radiance<br>redefined.</h2>
+                <p style="font-size: 1.15rem; margin-bottom: 24px;">After years of researching holistic wellness and
+                    studying facial anatomy, I created Luminous to share the exact methods I use to keep my skin firm
+                    and radiant—without needles or drastic procedures.</p>
+                <a href="https://uk.linkedin.com/in/philippa-mitchell-a1aba817" target="_blank"
+                    rel="noopener noreferrer"
+                    style="display: flex; align-items: center; gap: 8px; color: var(--clr-text-navy); text-decoration: none; font-weight: 600; margin-bottom: 32px; font-size: 0.9rem;">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="color: #0077b5;">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                    Connect on LinkedIn to increase trust
+                </a>
+                <img src="https://www.luminousfaceyoga.com/images/signature-phillipa.jpg" alt="Signature"
+                    style="height: 60px; mix-blend-mode: multiply;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultra-Sleek Pricing -->
+    <section id="membership" class="section-xl" style="background: var(--clr-bg-pearl);">
+        <div class="container pricing-wrapper">
+            <div class="flex-center reveal" style="flex-direction: column; text-align: center; margin-bottom: 40px;">
+                <h2 style="font-size: 3.5rem; margin-bottom: 16px;">Begin Your Ritual</h2>
+                <p style="font-size: 1.2rem; max-width: 500px;">Unlock the full library, live interactive classes, and
+                    dedicated teacher support.</p>
+            </div>
+
+            <!-- Custom Toggle -->
+            <div class="pricing-toggle reveal">
+                <button class="toggle-btn active" id="btn-monthly">Monthly</button>
+                <button class="toggle-btn" id="btn-annual" style="position:relative;">
+                    Annual
+                    <span
+                        style="position:absolute; top:-10px; right:-10px; background:var(--clr-accent-teal); color:var(--clr-text-navy); font-size:0.6rem; padding:4px 8px; border-radius:10px; font-weight:bold;">SAVE
+                        30%</span>
+                </button>
+            </div>
+
+            <div class="pricing-cards reveal">
+                <!-- Standard Plan -->
+                <div class="p-card">
+                    <h3 class="font-heading" style="font-size: 2rem;">Essential</h3>
+                    <p style="color: var(--clr-text-muted);">The Foundation</p>
+                    <div class="price-num">£18</div>
+                    <div class="price-period">billed monthly</div>
+
+                    <ul class="p-list">
+                        <li><svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Full App Access</li>
+                        <li><svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Daily 10-Min Routines</li>
+                    </ul>
+                    <a href="#" class="btn-pill btn-outline flex-center" style="width:100%;">START 7-DAY FREE TRIAL</a>
+                </div>
+
+                <!-- Featured Plan -->
+                <div class="p-card featured">
+                    <span class="feat-tag">Most Popular</span>
+                    <h3 class="font-heading" style="font-size: 2rem;">Luminous VIP</h3>
+                    <p style="color: rgba(255,255,255,0.7);">The Full Transformation</p>
+                    <div class="price-num" id="dynamic-price">£150</div>
+                    <div class="price-period" id="dynamic-period">billed annually</div>
+
+                    <ul class="p-list">
+                        <li><svg width="24" height="24" fill="none" class="text-primary" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Everything in Essential</li>
+                        <li><svg width="24" height="24" fill="none" class="text-primary" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Weekly Live Interactive Studios</li>
+                        <li><svg width="24" height="24" fill="none" class="text-primary" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Direct Teacher Forum Access</li>
+                    </ul>
+                    <a href="#" class="btn-pill btn-teal flex-center" style="width:100%;">SUBSCRIBE NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Form / Newsletter -->
+    <section class="section-xl">
         <div class="container">
-            <div style="text-align: center; max-width: 600px; margin: 0 auto 60px;" class="animate-on-scroll">
-                <h2 style="font-size: 3rem; margin-bottom: 20px;">Find Your Perfect Path</h2>
-                <p style="font-size: 1.15rem;">We've organized our expert guidance into three clear paths to help you
-                    achieve your goals without the guesswork.</p>
-            </div>
+            <div class="form-container reveal">
+                <span class="font-heading"
+                    style="font-size: 1.5rem; font-style: italic; color: var(--clr-text-navy);">The Luminous
+                    Letter</span>
+                <h2 style="font-size: 3rem; margin: 16px 0;">Elevate your inbox.</h2>
+                <p style="font-size: 1.15rem; color: var(--clr-text-body);">Join our mailing list for holistic skincare
+                    routines, exclusive offers, and early access to live masterclasses.</p>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                <!-- Path 1 -->
-                <div class="glass-card animate-on-scroll"
-                    style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&auto=format&fit=crop"
-                        alt="The Foundation" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 40px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <span
-                            style="color: var(--primary); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Most
-                            Popular</span>
-                        <h3 style="font-size: 1.75rem; margin-top: 10px; margin-bottom: 15px;">The Foundation</h3>
-                        <p style="margin-bottom: 30px; flex-grow: 1;">Our flagship 6-week program designed for
-                            beginners. A complete overhaul for your face and neck.</p>
-                        <a href="#"
-                            style="color: var(--text-slate); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--primary); padding-bottom: 4px; display: inline-block; width: max-content;">Explore
-                            Program</a>
-                    </div>
-                </div>
-
-                <!-- Path 2 -->
-                <div class="glass-card animate-on-scroll"
-                    style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-                    <img src="https://images.unsplash.com/photo-1544161513-01f11ab195cd?w=600&auto=format&fit=crop"
-                        alt="Targeted Focus" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 40px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <span
-                            style="color: var(--primary); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Quick
-                            Fixes</span>
-                        <h3 style="font-size: 1.75rem; margin-top: 10px; margin-bottom: 15px;">Targeted Focus</h3>
-                        <p style="margin-bottom: 30px; flex-grow: 1;">Short, highly specific routines for the eyes,
-                            forehead, jawline, and jowls. Perfect for busy days.</p>
-                        <a href="#"
-                            style="color: var(--text-slate); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--primary); padding-bottom: 4px; display: inline-block; width: max-content;">Explore
-                            Routines</a>
-                    </div>
-                </div>
-
-                <!-- Path 3 -->
-                <div class="glass-card animate-on-scroll"
-                    style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-                    <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=600&auto=format&fit=crop"
-                        alt="Live Studio" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 40px; flex-grow: 1; display: flex; flex-direction: column;">
-                        <span
-                            style="color: var(--primary); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Community</span>
-                        <h3 style="font-size: 1.75rem; margin-top: 10px; margin-bottom: 15px;">Live Studio</h3>
-                        <p style="margin-bottom: 30px; flex-grow: 1;">Join our trainers every week for live guidance,
-                            Q&A, and community motivation.</p>
-                        <a href="#"
-                            style="color: var(--text-slate); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--primary); padding-bottom: 4px; display: inline-block; width: max-content;">Join
-                            Studio</a>
-                    </div>
-                </div>
+                <form class="form-inline">
+                    <input type="email" placeholder="Enter your email address..." required>
+                    <button type="button" class="btn-pill btn-primary" style="padding: 0 48px;">Join</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- 5. Meet the Founder -->
-    <section id="founder" style="padding: 120px 0; background-color: var(--bg-white);">
-        <div class="container hero-grid"
-            style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
-            <div class="animate-on-scroll">
-                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&auto=format&fit=crop"
-                    alt="Philippa Mitchell" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-soft);">
-            </div>
-            <div class="animate-on-scroll">
-                <h2 style="font-size: 3rem; margin-bottom: 24px;">"Ageing is inevitable. How you age is up to you."</h2>
-                <p style="font-size: 1.15rem; margin-bottom: 20px;">Hi, I'm Philippa Mitchell. I created Luminous Face
-                    Yoga because I was tired of the beauty industry telling us we needed invasive procedures to look our
-                    best.</p>
-                <p style="font-size: 1.15rem; margin-bottom: 40px;">Our method is built on the belief that empowering
-                    women with the tools to naturally lift and tone their own faces is the ultimate form of self-care.
-                </p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Signature_Placeholder.svg" alt="Signature"
-                    style="height: 60px; filter: grayscale(1); opacity: 0.7;">
-            </div>
-        </div>
-    </section>
+    <!-- Refined Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="https://www.luminousfaceyoga.com/logos/logo_footer.png" alt="Luminous"
+                        class="footer-logo">
+                    <p style="font-size: 1rem; margin-bottom: 24px;">The most supportive face fitness platform. Smooth,
+                        tone, and radiate naturally.</p>
+                    <div style="display: flex; gap: 16px; font-weight: 600;">
+                        <a href="#" style="color: white;">Instagram</a>
+                        <a href="#" style="color: white;">Facebook</a>
+                    </div>
+                </div>
 
-    <!-- 6. The "No-Risk" Final Push -->
-    <section style="padding: 120px 0; background-color: var(--bg-pearl); text-align: center;">
-        <div class="container animate-on-scroll">
-            <h2 style="font-size: 3.5rem; margin-bottom: 24px;">Ready to Reveal Your Radiance?</h2>
-            <p
-                style="font-size: 1.25rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Start today with absolutely no risk. If you don't feel a difference in 7 days, cancel anytime.
-            </p>
-            <a href="#" class="btn btn-primary" style="font-size: 1.15rem; padding: 18px 48px;">Start Your 7-Day Free
-                Trial</a>
-            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-muted);">£18/month after trial. Cancel
-                anytime with one click.</p>
-        </div>
-    </section>
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">The Method</a></li>
+                        <li><a href="#">The Science</a></li>
+                        <li><a href="#">My Story</a></li>
+                        <li><a href="#">Journal</a></li>
+                    </ul>
+                </div>
 
-    <!-- Footer -->
-    <footer style="padding: 60px 0; background-color: var(--text-slate); color: white;">
-        <div class="container"
-            style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px;">
-            <div class="font-heading" style="font-size: 1.5rem; font-weight: 700;">
-                LUMINOUS <span style="font-weight: 400; font-size: 0.85rem; letter-spacing: 2px;">FACE YOGA</span>
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help & FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="mailto:info@luminousfaceyoga.com">info@luminous.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
             </div>
-            <nav style="display: flex; gap: 30px;">
-                <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Terms</a>
-                <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Privacy</a>
-                <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Contact</a>
-            </nav>
-        </div>
-        <div class="container"
-            style="text-align: center; padding-top: 40px; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
-            &copy; 2026 Luminous Face Yoga. All rights reserved. Let's Glow.
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Luminous London Ltd. Registered in Herts, SG9 9PE.</span>
+                <div style="display: flex; gap: 24px;">
+                    <span>Created for high-end conversion.</span>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Interactive Scripts -->
     <script>
-        // Intersection Observer for scroll animations
+        // Reveal Animations & Sticky Nav Logo Sizing
         document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.15
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
+            const observer = new IntersectionObserver((entries, obs) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        observer.unobserve(entry.target);
+                        entry.target.classList.add('active');
+                        obs.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-            document.querySelectorAll('.animate-on-scroll').forEach(element => {
-                observer.observe(element);
-            });
-
-            // Header glass effect on scroll
+            // Scrolled logic for header
             window.addEventListener('scroll', () => {
-                const header = document.querySelector('.header-glass');
-                if (window.scrollY > 50) {
-                    header.style.padding = '5px 0';
-                    header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
-                } else {
-                    header.style.padding = '0';
-                    header.style.boxShadow = 'none';
-                }
+                const nav = document.querySelector('.nav-wrapper');
+                if (window.scrollY > 50) nav.classList.add('scrolled');
+                else nav.classList.remove('scrolled');
             });
         });
+
+        // Before/After Slider Logic
+        const slider = document.getElementById('ba-slider');
+        const beforeImg = document.getElementById('ba-before-img');
+        const handle = document.getElementById('ba-handle');
+        let isSliding = false;
+
+        if (slider) {
+            const slideMove = (x) => {
+                const rect = slider.getBoundingClientRect();
+                let pos = Math.max(0, Math.min(x - rect.left, rect.width));
+                const percent = (pos / rect.width) * 100;
+                handle.style.left = `${percent}%`;
+                beforeImg.style.clipPath = `polygon(0 0, ${percent}% 0, ${percent}% 100%, 0 100%)`;
+            };
+
+            slider.addEventListener('mousedown', (e) => { isSliding = true; slideMove(e.clientX); });
+            slider.addEventListener('touchstart', (e) => { isSliding = true; slideMove(e.touches[0].clientX); }, { passive: true });
+
+            window.addEventListener('mousemove', (e) => { if (isSliding) slideMove(e.clientX); });
+            window.addEventListener('touchmove', (e) => { if (isSliding) slideMove(e.touches[0].clientX); }, { passive: true });
+
+            window.addEventListener('mouseup', () => isSliding = false);
+            window.addEventListener('touchend', () => isSliding = false);
+        }
+
+        // Pricing Toggle Logic
+        const btnM = document.getElementById('btn-monthly');
+        const btnA = document.getElementById('btn-annual');
+        const dPrice = document.getElementById('dynamic-price');
+        const dPeriod = document.getElementById('dynamic-period');
+
+        if (btnM && btnA) {
+            btnM.addEventListener('click', () => {
+                btnM.classList.add('active'); btnA.classList.remove('active');
+                dPrice.innerText = '£18'; dPeriod.innerText = 'billed monthly';
+            });
+            btnA.addEventListener('click', () => {
+                btnA.classList.add('active'); btnM.classList.remove('active');
+                dPrice.innerText = '£150'; dPeriod.innerText = 'billed annually';
+            });
+        }
     </script>
 </body>
 
