@@ -398,7 +398,7 @@ a {
 /* Overlapping Video Card */
 .hero-video-card {
     position: relative;
-    margin: -120px auto 100px;
+    margin: -120px auto 32px;
     max-width: 1000px;
     width: 90%;
     aspect-ratio: 16/9;
@@ -1076,6 +1076,7 @@ footer {
 
     .hero-video-card {
         margin-top: -60px;
+        margin-bottom: 0;
     }
 
     .editorial-grid {
