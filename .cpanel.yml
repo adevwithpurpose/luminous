@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/outafbox/luminous.outafbox.com/
+    - /bin/cp -R * $DEPLOYPATH
