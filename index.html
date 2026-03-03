@@ -32,8 +32,17 @@
                 <a href="#community">Community</a>
             </nav>
             <div class="nav-actions">
-                <a href="#login" style="font-size:0.85rem; font-weight:600; text-transform:uppercase;">Sign In</a>
-                <a href="#membership" class="btn-pill btn-primary" style="padding: 12px 28px;">Start Today</a>
+                <a href="#login" class="nav-icon-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span class="desktop-only"
+                        style="margin-left: 8px; font-size:0.85rem; font-weight:600; text-transform:uppercase;">Sign
+                        In</span>
+                </a>
+                <a href="#membership" class="btn-pill btn-primary btn-join-nav" style="padding: 12px 28px;">JOIN</a>
             </div>
         </header>
     </div>
@@ -358,8 +367,9 @@
 
                 <!-- The Interactive Slider -->
                 <div class="ba-slider reveal"
-                    style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-float); line-height: 0;">
-                    <img src="results-placeholder.png" style="width: 100%; height: auto; display: block;"
+                    style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-float); line-height: 0; margin-bottom: 0;">
+                    <img src="results-placeholder.png"
+                        style="width: 100%; height: auto; display: block; margin-bottom: 0;"
                         alt="Before and After Results">
                 </div>
 
@@ -564,7 +574,7 @@
 
                 <form class="form-inline">
                     <input type="email" placeholder="Enter your email address..." required>
-                    <button type="button" class="btn-pill btn-primary" style="padding: 0 48px;">Join</button>
+                    <button type="button" class="btn-pill btn-primary">Join</button>
                 </form>
             </div>
         </div>

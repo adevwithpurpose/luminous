@@ -234,6 +234,22 @@ a {
     gap: 24px;
 }
 
+.nav-icon-link {
+    display: flex;
+    align-items: center;
+    color: var(--clr-text-navy);
+}
+
+.desktop-only {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
 /* Buttons */
 .btn-pill {
     padding: 16px 40px;
@@ -1094,7 +1110,13 @@ footer {
     .hero-pricing-block {
         justify-content: center;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
+        text-align: center;
+    }
+
+    .hero-price {
+        align-items: center;
     }
 
     .hero-video-card {
@@ -1180,5 +1202,41 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 16px;
+        text-align: center;
+    }
+
+    .nav-actions {
+        gap: 12px;
+    }
+
+    .nav-icon-link {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .nav-glass {
+        padding: 8px 16px;
+    }
+
+    .logos-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .logos-flex .logo-txt:last-child {
+        grid-column: span 2;
+    }
+
+    .section-xl {
+        padding: 60px 0;
+    }
+
+    .section-lg {
+        padding: 40px 0;
     }
 }
