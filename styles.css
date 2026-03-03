@@ -747,10 +747,17 @@ a {
 .ba-slider {
     position: relative;
     width: 100%;
-    height: 500px;
+    margin-bottom: 0;
+    line-height: 0;
     border-radius: var(--radius-md);
     overflow: hidden;
-    user-select: none;
+}
+
+.ba-slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
 }
 
 .ba-img {
@@ -1004,13 +1011,17 @@ a {
 
 .form-inline input {
     flex-grow: 1;
-    padding: 20px 32px;
+    padding: 18px 32px;
     border-radius: var(--radius-pill);
     border: none;
     outline: none;
     font-family: var(--font-body);
     font-size: 1rem;
     box-shadow: var(--shadow-soft);
+}
+
+.form-inline .btn-pill {
+    padding: 18px 48px;
 }
 
 /* Footer */
@@ -1108,15 +1119,21 @@ footer {
     }
 
     .hero-pricing-block {
-        justify-content: center;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        justify-content: center;
         text-align: center;
+        gap: 24px;
+        width: 100%;
+        margin-top: 32px;
     }
 
     .hero-price {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .hero-video-card {
@@ -1190,6 +1207,8 @@ footer {
     .form-inline input,
     .form-inline button {
         width: 100%;
+        padding: 18px 32px;
+        /* Sync vertical padding */
     }
 
     .footer-grid {
@@ -1224,12 +1243,20 @@ footer {
     .logos-flex {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 32px;
+        align-items: center;
         justify-items: center;
+        width: 100%;
+    }
+
+    .logos-flex .logo-txt {
+        text-align: center;
+        width: 100%;
     }
 
     .logos-flex .logo-txt:last-child {
         grid-column: span 2;
+        text-align: center;
     }
 
     .section-xl {
